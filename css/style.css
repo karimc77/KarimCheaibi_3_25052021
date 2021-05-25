@@ -3,6 +3,10 @@
   font-family: "Roboto", "Arial", "sans-serif";
 }
 
+
+
+/* GLOBAL */
+
 title {
     font-family: "Shrikhand";
 }
@@ -11,14 +15,6 @@ body {
   margin: 0em;
   display: flex;
   flex-direction: column;
-}
-
-h4 {
-  color: black;
-}
-
-a {
-  text-decoration: none;
 }
 
 /* .body-accueil {
@@ -30,24 +26,10 @@ a {
   z-index: 500;
 } */
 
-.titre-accueil {
-  background-color: #f6f6f6;
-}
+/* HEADER */
 
-.h1-accueil {
-  text-align: center;
-  font-size: 1.5em;
-  padding: 1em 2em 0em 2em;
-}
-
-.p-titre {
-  text-align: center;
-  color: #353535;
-  padding: 0 0.5em 0 0.5em;
-}
-
-.h2-accueil {
-  margin-left: 2em;
+a {
+  text-decoration: none;
 }
 
 .header {
@@ -55,15 +37,18 @@ a {
   text-align: center;
   box-shadow: 0px 4px 10px -6px rgba(89, 89, 89, 0.64);
 }
+
 .header-icone {
   position: absolute;
   left: 1.5em;
   top: 1.6em;
 }
+
 .header-icone-food {
   color: black;
   font-size: 1.3em;
 }
+
 .header-logo {
   width: 10em;
 }
@@ -115,6 +100,9 @@ a {
     }
 }
 
+
+/* LOCALISATION & BOUTON EXPLORER */
+
 .localisation {
     display: flex;
     justify-content: center;
@@ -129,8 +117,23 @@ a {
 .fa-map-marker-alt {
     margin-right: 1em;
 }
+
+.titre-accueil {
+    background-color: #f6f6f6;
+}
   
-/* Rajouter à l'include ".btn-link-text::after { content: "";} */
+.h1-accueil {
+    text-align: center;
+    font-size: 1.5em;
+    padding: 1em 2em 0em 2em;
+}
+  
+.p-titre {
+    text-align: center;
+    color: #353535;
+    padding: 0 0.5em 0 0.5em;
+}
+
 .btn-link {
     text-align: center;
 }
@@ -173,4 +176,81 @@ a {
 .btn-link-text::after {
     content: "Explorer nos restaurants";
 }
+
+/* FONCTIONNEMENT BOUTON 1/2/3 */
+
+.h2-accueil {
+    display: flex;
+    justify-content: center;
+    
+}
+
+h4 {
+    color: black;
+}
+
+.function {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
   
+.function-tuto {
+    display: flex;
+    padding: 2.2em 1.4em 2.2em 2em;
+    background-color: #f0eeee;
+    width: 220px;
+    border-radius: 1em;
+    box-shadow: 0 7px 10px -6px rgba(152, 152, 152, 0.64);
+    position: relative;
+    margin: 1em 1em 1em 2.1em;
+    color: #7e7e7e;
+}
+
+.function-tuto::before {
+    transition: opacity 600ms ease-in-out;
+    background-color: #e4d5f6;
+    opacity: 0;
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    border-radius: 1em;
+}
+
+.function-tuto:hover {
+    color: #9356DC;
+    
+}
+
+.function-tuto:hover::before {
+    opacity: 1;
+}
+
+.function-tuto-number {
+    left: -0.7em;
+    top: 1.35em;
+    position: absolute;
+    padding: 0.2em 0.5em 0.2em 0.5em;
+    margin-right: 1em;
+    background-color: #9356DC;
+    border-radius: 2em;
+    color: white;
+}
+
+.function-tuto-icon {
+    font-size: 1.2em;
+    top: 1.15em;
+    padding: 0 1em 0 0;
+    left: 1.7em;
+    position: absolute;
+}
+
+.function-tuto-text {
+    font-weight: bold;
+    position: absolute;
+    left: 4em;
+    top: 0.3em;
+}
