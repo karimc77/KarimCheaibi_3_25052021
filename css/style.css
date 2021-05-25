@@ -3,6 +3,10 @@
   font-family: "Roboto", "Arial", "sans-serif";
 }
 
+title {
+    font-family: "Shrikhand";
+}
+
 body {
   margin: 0em;
   display: flex;
@@ -17,114 +21,14 @@ a {
   text-decoration: none;
 }
 
-.body-accueil {
+/* .body-accueil {
   animation: loading-spinner 1500ms ease-in-out forwards;
   background-color: white;
   width: 100%;
   height: 100%;
   position: fixed;
   z-index: 500;
-}
-
-
-/* ANCIEN LOADER ******
-@keyframes loading-spinner {
-  0% {
-    opacity: 0.85;
-  }
-  90% {
-    opacity: 0.85;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-@keyframes loading-spinner-background {
-  0% {
-    opacity: 1;
-    visibility: visible;
-  }
-  90% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-    visibility: hidden;
-  }
-}
-.loading-spinner-visibility {
-  position: fixed;
-  height: 100%;
-  width: 100%;
-  animation: loading-spinner-background 2700ms forwards;
-  background-color: white;
-  z-index: 10000;
-}
-
-.loading-spinner {
-  display: flex;
-  justify-content: center;
-}
-.loading-spinner-1 {
-  border-left: 8px solid #9356DC;
-  border-right: 8px solid #99E2D0;
-  border-radius: 30em;
-  height: 10em;
-  width: 10em;
-  position: absolute;
-  z-index: 1000;
-  animation: spinner-1 3000ms cubic-bezier(0, 0, 1, 1) forwards;
-  top: 19em;
-}
-.loading-spinner-2 {
-  border-left: 6px solid #FF79DA;
-  border-right: 6px solid #9356DC;
-  border-radius: 30em;
-  height: 15em;
-  width: 15em;
-  position: absolute;
-  z-index: 1000;
-  animation: spinner-2 3000ms cubic-bezier(0, 0, 1, 1) forwards;
-  top: 16.5em;
-}
-.loading-spinner-3 {
-  border-right: 3px solid #99E2D0;
-  border-left: 3px solid #FF79DA;
-  border-radius: 30em;
-  height: 20em;
-  width: 20em;
-  position: absolute;
-  z-index: 1000;
-  animation: spinner-3 3000ms cubic-bezier(0, 0, 1, 1) forwards;
-  top: 14em;
-}
-
-@keyframes spinner-1 {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(720deg);
-  }
-}
-@keyframes spinner-2 {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(1200deg);
-  }
-}
-@keyframes spinner-3 {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(1800deg);
-  }
-}
-*/
-
+} */
 
 .titre-accueil {
   background-color: #f6f6f6;
@@ -156,7 +60,7 @@ a {
   left: 1.5em;
   top: 1.6em;
 }
-.header-icone-truc {
+.header-icone-food {
   color: black;
   font-size: 1.3em;
 }
@@ -166,8 +70,9 @@ a {
 
 /******* CREATION LOADER ******/
 
-.loading-spinner-visibility {
+.loader-spinner {
     /*border: 10px solid #99E2D0;*/
+    /* #9356DC #FF79DA #99E2D0  Couleurs demandées dans Projet P3 */
     border-top: 10px solid #9356DC;
     border-bottom: 10px solid #FF79DA;
     border-left: 10px solid #99E2D0;
@@ -178,16 +83,15 @@ a {
     -o-animation: spin 1.5s linear infinite;      /* Animation navigateur mozilla */
     animation: spin 1.5s linear infinite;
     
-    /* Placement loader milieu page */
+/* Placement loader milieu page */
 
-margin: auto;
-position: absolute;
-top: 0;
-left: 0;
-right: 0;
-bottom: 0;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
 }
-/* #9356DC #FF79DA #99E2D0  Couleurs demandées dans Projet P3 */
 
 /* ANIMATION LOADER */
 
@@ -210,3 +114,63 @@ bottom: 0;
         transform: rotate(360deg);
     }
 }
+
+.localisation {
+    display: flex;
+    justify-content: center;
+    background-color: #eaeaea;
+    color: #353535;
+    padding: 1em 0 1em 0;
+    z-index: -1;
+    position: relative;
+    font-weight: bold;
+}
+
+.fa-map-marker-alt {
+    margin-right: 1em;
+}
+  
+/* Rajouter à l'include ".btn-link-text::after { content: "";} */
+.btn-link {
+    text-align: center;
+}
+
+.btn-link-text {
+    color: white;
+    background: linear-gradient(#FF79DA, #9356DC);
+    border-radius: 2em;
+    border: none;
+    font-size: 1em;
+    padding: 0.94em 1.3em 0.94em 1.3em;
+    margin: 1em 0 1em 0;
+    display: inline-block;
+    box-shadow: 0px 7px 10px -6px rgba(63, 63, 63, 0.64);
+    position: relative;
+}
+
+.btn-link-text:hover {
+    cursor: pointer;
+}
+  
+.btn-link-text:hover::after {
+    opacity: 1;
+}
+
+.btn-link-text::after {
+    opacity: 0;
+    transition: opacity 400ms ease-in-out;
+    background: linear-gradient(#ff46cc, #782cd3, #99E2D0);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    border-radius: 2em;
+    font-size: 1em;
+    padding: 0.94em 1.3em 0.94em 1.3em;
+}
+
+.btn-link-text::after {
+    content: "Explorer nos restaurants";
+}
+  

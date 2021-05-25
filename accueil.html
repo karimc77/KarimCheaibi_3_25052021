@@ -10,20 +10,38 @@
   <meta name="description" content="Ohmyfood! est une entreprise de commande de repas en ligne. Notre concept permet aux utilisateurs de composer leur propre menu et réduire leur temps d’attente dans les restaurants.">
 </head>
 <body>
-    <div class= loading-spinner-visibility>
-        <div class="loading-spinner">
-                <div class="loading-spinner-1"></div>
-                <div class="loading-spinner-2"></div>
-                <div class="loading-spinner-3"></div>
-        </div>
-    </div>
+    <!-- LOADER SPINNER-->
+
+    <div class= loader-spinner></div>
+    
+    <!-- HEADER -->
+
     <header class="header">
             <a class="header-icone" href="">
-                <i class="fas fa-arrow-left header-icone-truc"></i>
+                <i class="fas fa-arrow-left header-icone-food"></i>
             </a>
             <a href="accueil.html" class="header-logo">
                 <img class="header-logo" src="images/logo/ohmyfood.png" alt="ohmyfood" />
             </a>
     </header>
+
+    <!-- FIN HEADER -->
+
+    <div class="localisation">
+        <i class="fas fa-map-marker-alt"></i>
+        <input type="text" id="location" placeholder="Paris, Belleville" />
+    </div>
+    <div class="titre-accueil">
+        <h1 class="h1-accueil">Réservez le menu qui vous convient</h1>
+        <p class="p-titre">Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
+        <div class="btn-link">
+            <button class="btn-link-text">
+                Explorer nos restaurants
+            </button>
+        </div>
+    </div>
+
+
+
 </body>
 </html>
