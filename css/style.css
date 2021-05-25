@@ -26,6 +26,8 @@ a {
   z-index: 500;
 }
 
+
+/* ANCIEN LOADER ******
 @keyframes loading-spinner {
   0% {
     opacity: 0.85;
@@ -121,6 +123,9 @@ a {
     transform: rotate(1800deg);
   }
 }
+*/
+
+
 .titre-accueil {
   background-color: #f6f6f6;
 }
@@ -159,3 +164,49 @@ a {
   width: 10em;
 }
 
+/******* CREATION LOADER ******/
+
+.loading-spinner-visibility {
+    /*border: 10px solid #99E2D0;*/
+    border-top: 10px solid #9356DC;
+    border-bottom: 10px solid #FF79DA;
+    border-left: 10px solid #99E2D0;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    -webkit-animation: spin 1.5 linear infinite; /* Animation navigateurs chrome, explorer... */
+    -o-animation: spin 1.5s linear infinite;      /* Animation navigateur mozilla */
+    animation: spin 1.5s linear infinite;
+    
+    /* Placement loader milieu page */
+
+margin: auto;
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+}
+/* #9356DC #FF79DA #99E2D0  Couleurs demandées dans Projet P3 */
+
+/* ANIMATION LOADER */
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
