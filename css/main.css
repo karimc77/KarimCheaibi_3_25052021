@@ -1,0 +1,315 @@
+@font-face {
+    font-family: "shrikhand";
+    src: url('polices/Shrikhand-Regular.ttf');
+}
+
+@font-face {
+    font-family: "roboto";
+    src: url('polices/Roboto-Regular.ttf');
+}
+
+@font-face {
+    font-family: "robotoB";
+    src: url('polices/Roboto-Bold.ttf');
+}
+
+/* CORPS GENERAL */
+
+body {
+    margin: auto;
+}
+
+
+/* HEADER */
+
+.header {
+    text-align: center;
+}
+
+
+#background {
+    background-color: #F0F0F0;
+    padding: 25px 25px;
+}
+
+.logo {
+    font-family: "shrikhand";
+    margin: 15px;
+    width: 165px;
+    height: 28px;
+}
+
+
+/* LOCALISATION */
+
+
+.resume {
+    text-align: center;
+}
+
+h1 {
+    font-family: "robotoB";
+    font-size: 1.8rem;
+    font-weight: 800;
+}
+
+h2 {
+    font-family: "rotobB";
+    font-size: 1.5rem;
+    padding-top: 20px;
+    margin-bottom: 0px;
+}
+
+.discover {
+    font-family: "roboto";
+    font-size: 1rem;
+    font-weight: normal;
+    padding-top: 0px;
+    color: #4d4d4d;
+}
+
+.function-h2 {
+    font-family: "roboto";
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-align: left;
+    margin-left: 25px;
+    color: black;
+}
+
+.restaurant {
+    margin-left: 20px;
+}
+
+h3 {
+    font-family: "roboto";
+    color: black;
+    margin-bottom: 5px;
+    padding-left: 10px;
+}
+
+h4 {
+    font-family: "roboto";
+    font-weight: normal;
+    color: black;
+    margin-top: 5px;
+    margin-left: 10px
+}
+
+
+/* EXPLORER RESTAURANTS */
+
+.button {
+    text-align: center;
+    margin: 40px;
+}
+
+.button a {
+    border-radius: 25px 25px 25px 25px;
+    padding: 15px 20px;
+    background-color: #9356DC;
+    color: white;
+    font-family: "roboto";
+}
+
+.button:hover {
+    background: linear-gradient(180deg, #FF79DA, #9356DC);
+}
+
+/* FONCTIONNEMENT 1/2/3 */
+
+.function {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+article {
+    padding: 20px;
+}
+
+.number, .function-div {
+    border: #9356DC 2px solid;
+}
+
+.function-div {
+    position: relative;
+    padding: 5px 0px;
+    border-radius: 20px 20px;
+    border-color: #F0F0F0;
+    background-color: #F0F0F0;
+    box-shadow: 0px 5px 0px #F6F6F6;
+}
+
+.function-div:hover {
+    background-color: #f5edff;
+}
+
+.number {
+    margin-left: -12px;
+    float: left;
+    border-radius: 20px;
+    width: 24px;
+    height: 22px;
+    text-align: center;
+    padding-top: 3px;
+    color: white;
+    background-color: #9356DC;
+}
+
+.text-menu {
+    font-family: "robotoB";
+    padding-top: 5px;
+    padding-left: 30px;
+    color: black;
+}
+
+/* ICONES FONCTIONNEMENT 1/2/3 */
+
+.fa-mobile-alt {
+    color: black;
+    padding-right: 10px;
+}
+
+.fa-list {
+    color: black;
+    padding-right: 10px;
+}
+
+.fa-store {
+    color: black;
+    padding-right: 10px;
+}
+
+.fa-mobile-alt:hover {
+    color: #9356dc;
+}
+
+.fa-list:hover {
+    color: #9356dc;
+}
+
+.fa-store:hover {
+    color: #9356dc;
+}
+
+
+/* CREATION LOADER */
+
+.loader-spinner {
+    /*border: 10px solid #99E2D0;*/
+    /* #9356DC #FF79DA #99E2D0  Couleurs demandées dans Projet P3 */
+    border-top: 10px solid #9356DC;
+    border-bottom: 10px solid #FF79DA;
+    border-left: 10px solid #99E2D0;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    -webkit-animation: spin 5s linear infinite; /* Animation navigateurs chrome, explorer... */
+    -o-animation: spin 5s linear infinite;      /* Animation navigateur mozilla */
+    animation: spin 5s linear infinite;
+    
+/* Placement loader milieu page */
+
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+/* ANIMATION LOADER */
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+/* SECTIONS RESTAURANTS */
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-basis: auto;
+    background-color: #F0F0F0;
+    width: 100%;
+}
+
+.card {
+    border-radius: 10px 10px 10px 10px;
+    position: relative;
+    margin: 15px;
+    padding: 0px;
+    background-color: white;
+}
+
+.new {
+    position: absolute;
+    text-align: right;
+    top: 10%;
+    right: 5%;
+}
+
+span {
+    font-family: "roboto";
+    background-color: #99e2d0;
+    padding: 5px 5px;
+    border-radius: 5px 5px;
+    color: #008766;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.photo {
+    border-radius: 10px 10px 0px 0px;
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+.far {
+    float: right;
+    margin-right: 25px;
+}
+
+.fa-heart {
+    font-size: 1.3rem;
+    color: white;
+    margin-top: -2%;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+
+.fa-heart::before {
+    content: "\f004";
+    font-weight: bold;
+    transition: color 3s ease-out;
+}
+
+.fa-heart:hover::before {
+    color: #9356DC;
+    cursor: pointer;
+}

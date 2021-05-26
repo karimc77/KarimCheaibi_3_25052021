@@ -1,0 +1,31 @@
+footer {
+    background-color: #383e42;
+    padding: 25px;
+}
+
+.logo-footer {
+    font-family:"shrikhand";
+    width: 140px;
+    filter: invert(100%);
+}
+
+p {
+    font-family:"roboto";
+    font-size:1.1rem;
+    color: white;
+}
+
+.mail {
+    color:white;
+    text-decoration:none;
+}
+
+.fa-utensils{
+    font-size:0.9rem;
+    padding-right:10px;
+}
+
+.fa-hands-helping{
+  font-size:0.9rem;
+  padding-right:5px;  
+}

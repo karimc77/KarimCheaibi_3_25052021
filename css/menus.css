@@ -1,0 +1,128 @@
+/* POLICES CARACTERES */
+
+@font-face {
+    font-family: "shrikhand";
+    src: url('fonts/Shrikhand-Regular.ttf');
+}
+
+@font-face {
+    font-family: "roboto";
+    src: url('fonts/Roboto-Regular.ttf');
+}
+@font-face {
+    font-family: "robotoB";
+    src: url('fonts/Roboto-Bold.ttf');
+}
+
+body {
+    margin:auto;
+}
+
+h1 {
+    font-family:"shrikhand";
+    font-size:1.9rem;
+    margin:0px 20px;
+    font-weight:400;
+}
+
+h2 {
+    font-family:"roboto";
+    font-size:1.3rem;
+    font-weight:normal;
+    margin-left:30px;
+    padding-top:20px;
+    border-bottom:3px #99e2d0 solid;
+    width:8%;
+}
+
+h3 {
+    font-family:"robotoB";
+    font-size:1rem;
+    font-weight:normal;
+    margin-bottom:2px;
+    margin-left:5px;
+}
+
+h4 {
+    font-family:"roboto";
+    font-size:1rem;
+    font-weight:normal;
+    margin-top:0px;
+    margin-left:5px;
+}
+
+strong {
+    float:right;
+    margin-right:4%;
+}
+
+/* HEADER */
+
+header {
+    text-align: center;
+}
+
+.header {
+    width:100%;
+    display: flex;
+    flex-direction:row;
+    justify-content:space-evenly;
+    height: 40px;
+    margin-bottom:20px;
+    padding-top:20px;
+}
+
+.fa-arrow-left {
+    font-size:1.5rem;
+    color:black;
+    margin-top:10px;
+}
+
+.photo {
+    width:100%;
+    height:250px;
+    object-fit:cover;
+}
+
+.fa-heart {
+    margin-left:25px;
+}
+
+/* CARTES RESTAURANTS */
+
+section {
+    position:relative;
+    background-color:#f6f6f6;
+    border-radius: 50px 50px 0px 0px;
+    padding-top:35px;
+    margin-top: -40px;
+}
+
+article {
+    border-radius: 10px 10px 10px 10px;
+    padding:2px 2px;
+    margin:20px;
+    background-color: white;
+}
+
+/* COMMANDER */
+
+.button {
+    text-align: center;
+    padding:40px 0px 50px;
+}
+
+a.button:link { 
+ text-decoration:none; 
+}
+
+.button a {
+    border-radius: 25px 25px 25px 25px;
+    padding: 10px 30px;
+    background-color: #FF79DA;
+    color: white;
+}
+
+.button :hover {
+    background: linear-gradient(to bottom right,#FF79DA,#9356DC);
+}

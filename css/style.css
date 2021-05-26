@@ -254,3 +254,167 @@ h4 {
     left: 4em;
     top: 0.3em;
 }
+
+/* SECTIONS RESTAURANTS */
+
+.restaurants {
+    background-color: #f6f6f6;
+}
+
+article {
+    padding: 20px;
+}
+
+.art {
+    border-radius: 10px 10px 10px 10px;
+    position: relative;
+    margin: 15px;
+    padding: 0px;
+    background-color: white;
+}
+
+.nouveau {
+    position: absolute;
+    text-align: right;
+    top: 10%;
+    right: 5%;
+}
+
+span {
+    font-family: "roboto";
+    background-color: #99e2d0;
+    padding: 5px 5px;
+    border-radius: 5px 5px;
+    color: #008766;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.img1 {
+    border-radius: 10px 10px 0px 0px;
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.menus {
+    display: flex;
+    justify-content: center;
+}
+
+
+.carte-menus {
+    border-radius: 1em;
+    justify-content: center;
+    box-shadow: 0px 7px 10px -6px rgba(63, 63, 63, 0.64);
+    margin: 1em;
+    display: inline-block;
+    background-color: white;
+}
+
+
+
+
+.image-1 {
+    background-size: cover;
+    width: 20em;
+    height: 10em;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+    background-position: center center;
+    background-image: url(images/cartes-restaurants/la-palette.jpg);
+  }
+  
+  .image-2 {
+    background-size: cover;
+    width: 20em;
+    height: 10em;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+    background-position: center center;
+    background-image: url(images/cartes-restaurants/la-note.jpg);
+  }
+  
+  .image-3 {
+    background-size: cover;
+    width: 20em;
+    height: 10em;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+    background-position: center center;
+    background-image: url(images/cartes-restaurants/la-francaise.jpg);
+  }
+  
+  .image-4 {
+    background-size: cover;
+    width: 20em;
+    height: 10em;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+    background-position: center center;
+    background-image: url(images/cartes-restaurants/le-delice.jpg);
+  }
+  
+
+  .carte-menus-img {
+    display: none;
+  }
+  .container-vignette__text {
+    display: flex;
+    justify-content: space-between;
+  }
+  .container-vignette__text__title {
+    padding: 0.7em 0 0 0.5em;
+    font-weight: bold;
+    color: black;
+  }
+  .container-vignette__text__paragraphe {
+    padding: 0.4em 0 0.5em 0.5em;
+    color: black;
+  }
+  .container-vignette__text__icon1 {
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    font-size: 1.5em;
+    color: #7e7e7e;
+    right: 0.5em;
+    top: 0.7em;
+  }
+  .container-vignette__text__icon1:hover {
+    color: transparent;
+  }
+  .container-vignette__text__icon2 {
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: -28px;
+    right: 0;
+    font-size: 1.5em;
+    right: 0.5em;
+    top: 0.7em;
+    transition: opacity 400ms ease-in-out;
+    opacity: 0;
+    color: transparent;
+    background: -webkit-linear-gradient(#9356DC, #FF79DA);
+    -webkit-background-clip: text;
+  }
+  .container-vignette__text__icon2:hover {
+    opacity: 1;
+  }
+  
+  
