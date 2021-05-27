@@ -16,8 +16,22 @@
 /* CORPS GENERAL */
 
 body {
-    margin: auto;
+    margin: auto;          
 }
+
+/* Pour faire apparaitre mon body et arreter mon loader spinner*/
+
+@keyframes opacity {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
 
 
 /* HEADER */
@@ -99,17 +113,20 @@ h4 {
 
 /* EXPLORER RESTAURANTS */
 
-.button {
-    text-align: center;
+.divbtn {
+    display:flex;
+    justify-content: center;
     margin: 40px;
 }
 
-.button a {
+.button  {
     border-radius: 25px 25px 25px 25px;
     padding: 15px 20px;
     background-color: #9356DC;
     color: white;
     font-family: "roboto";
+    outline: none;
+    
 }
 
 .button:hover {
@@ -206,9 +223,11 @@ article {
     border-radius: 50%;
     width: 100px;
     height: 100px;
-    -webkit-animation: spin 5s linear infinite; /* Animation navigateurs chrome, explorer... */
-    -o-animation: spin 5s linear infinite;      /* Animation navigateur mozilla */
-    animation: spin 5s linear infinite;
+    animation: spin 3s linear forwards;
+    position:absolute;
+    z-index: 2;
+
+    
     
 /* Placement loader milieu page */
 
@@ -222,26 +241,23 @@ article {
 
 /* ANIMATION LOADER */
 
-@-webkit-keyframes spin {
-    0% {
-        -webkit-transform: rotate(0deg);
-    }
-
-    100% {
-        -webkit-transform: rotate(360deg);
-    }
-}
-
 @keyframes spin {
     0% {
         transform: rotate(0deg);
+        opacity: 1;
     }
 
     100% {
         transform: rotate(360deg);
+        opacity: 0;
     }
 }
 
+/* Mettre une DIV container avec le loader spinner a part */
+
+.container {
+    animation: opacity 3s linear forwards; 
+}
 
 /* SECTIONS RESTAURANTS */
 
