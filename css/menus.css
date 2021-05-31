@@ -2,16 +2,16 @@
 
 @font-face {
     font-family: "shrikhand";
-    src: url('fonts/Shrikhand-Regular.ttf');
+    src: url('polices/Shrikhand-Regular.ttf');
 }
 
 @font-face {
     font-family: "roboto";
-    src: url('fonts/Roboto-Regular.ttf');
+    src: url('polices/Roboto-Regular.ttf');
 }
 @font-face {
     font-family: "robotoB";
-    src: url('fonts/Roboto-Bold.ttf');
+    src: url('polices/Roboto-Bold.ttf');
 }
 
 body {
@@ -79,8 +79,8 @@ header {
 }
 
 .photo {
-    width:100%;
-    height:250px;
+    width:50%;
+    height:150px;
     object-fit:cover;
 }
 
