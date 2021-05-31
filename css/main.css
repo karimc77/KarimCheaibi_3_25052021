@@ -1,16 +1,16 @@
 @font-face {
     font-family: "shrikhand";
-    src: url('polices/Shrikhand-Regular.ttf');
+    src: url('../polices/Shrikhand-Regular.ttf');
 }
 
 @font-face {
     font-family: "roboto";
-    src: url('polices/Roboto-Regular.ttf');
+    src: url('../polices/Roboto-Regular.ttf');
 }
 
 @font-face {
     font-family: "robotoB";
-    src: url('polices/Roboto-Bold.ttf');
+    src: url('../polices/Roboto-Bold.ttf');
 }
 
 /* CORPS GENERAL */
@@ -52,10 +52,6 @@ body {
     color: #4b4b4b;
     font-family: "roboto";
 }
-
-
-
-
 
 #background {
     background-color: #F0F0F0;
@@ -342,9 +338,9 @@ a:link {
 }
 
 .fa-heart::before {
-    content: "\f004";
+    /*content: "\f004";*/
     font-weight: bold;
-    transition: color 3s ease-out;
+    transition: color 1s ease-out;
 }
 
 .fa-heart:hover::before {
