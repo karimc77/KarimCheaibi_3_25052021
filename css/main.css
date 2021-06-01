@@ -80,8 +80,8 @@ h1 {
 }
 
 h2 {
-    display:flex;
-    justify-content: center;
+    /*display:flex;
+    justify-content: center;*/
     font-family: "rotobB";
     font-size: 1.5rem;
     padding-top: 20px;
@@ -173,7 +173,7 @@ article {
     border-color: #F0F0F0;
     background-color: #f0f0f0;
     box-shadow: 0px 5px 0px #F6F6F6;
-    width: 30%; /* Attention pour smartphone , pour pc enlever le width*/
+    width: 100%; /* Attention pour smartphone , pour pc enlever le width*/
 }
 
 .function-div:hover {
