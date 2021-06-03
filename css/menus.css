@@ -94,12 +94,7 @@ h2 {
     justify-content: space-between;
     align-items: center;
     line-height: 1.5em;
-}
-.align-price h4{
     margin: 0;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden;
 }
 
 .icon{
@@ -130,7 +125,7 @@ h2 {
     transform: rotate(360deg);
   }
 article:hover {
-    padding-right: 75px;
+    padding-right: 5%;
 }
 
 /*
@@ -168,16 +163,7 @@ article:hover {
 }
 */
 
-
-
 /*FIN Animation sur Icone Validation */
-
-
-
-
-
-
-
 
 h3 {
     font-family:"robotoB";
@@ -193,6 +179,9 @@ h4 {
     font-weight:normal;
     margin-top:0px;
     margin-left:5px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 strong {
@@ -259,7 +248,6 @@ article {
     background-color: white;
     position: relative;
 }
-
 
 /* COMMANDER */
 

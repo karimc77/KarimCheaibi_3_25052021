@@ -9,7 +9,7 @@ footer {
     filter: invert(100%);
 }
 
-p {
+.footer {
     font-family:"roboto";
     font-size:1.1rem;
     color: white;
