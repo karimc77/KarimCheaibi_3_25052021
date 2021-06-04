@@ -1,0 +1,79 @@
+/* EXPLORER */
+
+@media (min-width: 1440px) {
+    .divbtn {
+        margin-top: 5%;
+        margin-bottom:5%;
+    } 
+}
+
+
+/* FONCTIONEMENT BOUTON 1/2/3 */
+
+@media (min-width: 1440px) {
+    .function {
+        display:flex;
+        justify-content: center;
+    }  
+}
+
+@media (min-width: 1440px) {
+    .function-div {
+        padding-right:10px;
+    }  
+}
+
+/* CARTES RESTAURANTS */
+
+@media (min-width: 1440px) {
+    .restaurant {
+        margin-left: -120px;
+    }
+}
+
+
+@media (min-width: 1440px) {
+    .menu {
+        flex-direction: row;
+        justify-content:center;
+        flex-wrap: wrap;
+    }  
+}
+
+@media (min-width: 1440px) {
+    .card {
+        width: 35%;
+        padding-left:0px;
+        margin:60px 40px;
+    } 
+}
+
+@media (min-width: 1440px) {
+    .divbtn {
+        border-radius: 45px 45px 45px 45px;
+        padding: 20px 40px;
+        font-size: 1.5rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
