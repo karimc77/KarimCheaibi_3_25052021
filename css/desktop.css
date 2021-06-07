@@ -49,6 +49,15 @@
 }
 
 @media (min-width: 1440px) {
+    .photo {
+        border-radius: 10px 10px 0px 0px;
+        width: 110%;
+        height: 170px;
+        object-fit: cover;
+    }
+}
+
+@media (min-width: 1440px) {
     .divbtn {
         border-radius: 45px 45px 45px 45px;
         padding: 20px 40px;
@@ -56,24 +65,14 @@
     }
 }
 
+/* CARTES MENUS */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+@media (min-width: 1440px) {
+    .fa-heart {
+        font-size: 1.3rem;
+        color: white;
+        margin-top: 36%;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: black;
+    }
+}

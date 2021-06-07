@@ -139,8 +139,7 @@ h4 {
     background-color: #9356DC;
     color: white;
     font-family: "roboto";
-    outline: none;
-    
+    outline: none;    
 }
 
 .button:hover {
@@ -315,7 +314,7 @@ span {
 
 .photo {
     border-radius: 10px 10px 0px 0px;
-    width: 100%;
+    width: 116%;
     height: 170px;
     object-fit: cover;
 }
@@ -332,7 +331,7 @@ a:link {
 .fa-heart {
     font-size: 1.3rem;
     color: white;
-    margin-top: -2%;
+    margin-top: 57%;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: black;
 }
