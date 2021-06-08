@@ -108,7 +108,7 @@ h2 {
     align-items: center;
     background-color: #99E2D0;
     width: 60px;
-    height: 72px;
+    height: 90px;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
     right: -2px;
@@ -128,6 +128,9 @@ h2 {
     transition: transform 500ms ease-in-out;
 }
 
+
+/* Animation Coche Slide Right - Left */
+
 article:hover h4 {
     width:50%;
     white-space: nowrap;
@@ -145,17 +148,6 @@ article:hover .icon {
 	animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
-.icon {
-    animation: rotation 2s linear;
-}
-
-@keyframes rotation {
-    
-  
-    100% {
-       transform: rotate(360deg);
-    }
-}
 
 @keyframes slide-left {
     0% {
@@ -182,6 +174,27 @@ article:hover .icon {
       opacity: 1;
     }
 }
+
+/* FIN Animation Coche Slide Right - Left */
+
+/* Animation Coche Tournante */
+
+article:hover .icon i {
+    animation: rotation 1s linear ;
+}
+
+@keyframes rotation {
+    0% {
+       transform: rotate(0deg);
+    }
+  
+    100% {
+       transform: rotate(360deg);
+    }
+}
+
+/* FIN Animation Coche */
+
 
 /*FIN Animation sur Icone Validation */
 
