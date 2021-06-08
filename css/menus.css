@@ -145,6 +145,18 @@ article:hover .icon {
 	animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
+.icon {
+    animation: rotation 2s linear;
+}
+
+@keyframes rotation {
+    
+  
+    100% {
+       transform: rotate(360deg);
+    }
+}
+
 @keyframes slide-left {
     0% {
       -webkit-transform: translateX(0);
