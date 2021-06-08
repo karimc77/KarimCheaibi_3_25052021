@@ -330,8 +330,9 @@ a:link {
 
 .fa-heart {
     font-size: 1.3rem;
-    color: white;
-    margin-top: 57%;
+    color: #ff79da;
+    /*margin-top: 57%;*/
+    margin-left: 25px;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: black;
 }
@@ -339,10 +340,34 @@ a:link {
 .fa-heart:before {
     /*content: "\f004";*/
     font-weight: bold;
-    transition: color 1s ease-out;
+    transition: color 0.5s;
 }
 
 .fa-heart:hover {
     color: #9356DC;
     cursor: pointer;
 }
+
+.gradient:hover {
+    animation: gradient 1s ease-in-out;
+    display: inline-block;
+    opacity: 1;
+    background: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+    background: -webkit-linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+}
+
+@keyframes gradient {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 0.5;
+    }
+    100% {
+      opacity: 1;
+    }
+  }

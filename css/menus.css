@@ -229,7 +229,7 @@ header {
 }
 
 .fa-heart:before {
-    border-color:white;
+    border-color:#ff79da;
     font-weight: bold;
     transition: color 0.5s;
 }
@@ -238,6 +238,30 @@ header {
     color: #9356DC;
     cursor: pointer;
 }
+
+.gradient:hover {
+    animation: gradient 2s ease-in-out;
+    display: inline-block;
+    opacity: 1;
+    background: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+    background: -webkit-linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+}
+
+@keyframes gradient {
+    0% {
+      opacity: 0;
+    }
+    /*50% {
+      opacity: 0.5;
+    }*/
+    100% {
+      opacity: 1;
+    }
+  }
 
 /* CARTES RESTAURANTS */
 
