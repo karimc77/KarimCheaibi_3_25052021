@@ -18,9 +18,14 @@ body {
     margin:auto;
 }
 
+.logo {
+    width: 60%;
+    margin-left: 17%;  
+}
+
 h1 {
     font-family:"shrikhand";
-    font-size:1.9rem;
+    font-size:1.5rem;
     margin:0px 20px;
     font-weight:400;
 }
@@ -87,7 +92,7 @@ h2 {
 
 /* FIN Animation sur les cartes des menus  */
 
-/* Animation sur Icone Validation */
+/* Animation sur Icone Validation des menus */
 
 .align-price {
     display: flex;
@@ -123,46 +128,48 @@ h2 {
     transition: transform 500ms ease-in-out;
 }
 
-.fa-check-circle:hover {
-    transform: rotate(360deg);
+article:hover h4 {
+    width:50%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 
-article:hover {
-    padding-right: 5%;
+article:hover strong {
+    -webkit-animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
-/*
-.validate {
-    opacity: 0;
-    position:absolute;
-    right: -40px;
-    background-color: #99e2d0;
-    border-top-right-radius: 1rem;
-    border-bottom-right-radius: 1rem;
-    width: 3rem;
-    height: 5rem;
-    transform: transform 330ms ease-in-out;
-    transition-property: transform;
-    transition-duration: 1000ms;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+article:hover .icon {
+    -webkit-animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
-.validation {
-    height: 1.6rem;
-    width: 1.6rem ;
-    background-color: #fff ;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 100px;
-    transform: rotate(360deg);
-    transition-duration: 0.5s;
+
+@keyframes slide-left {
+    0% {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+    }
+
+    100% {
+      -webkit-transform: translateX(-100px);
+      transform: translateX(-100px);
+    }
 }
-.validationico {
-    color: #99e2d0;
+
+@keyframes slide-in-right {
+    0% {
+      -webkit-transform: translateX(1000px);
+      transform: translateX(1000px);
+      opacity: 0;
+    }
+
+    100% {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+      opacity: 1;
+    }
 }
-*/
 
 /*FIN Animation sur Icone Validation */
 
@@ -188,7 +195,7 @@ h4 {
 
 strong {
     float:right;
-    margin-right:40px;
+    margin-right:5px;
     margin-bottom: 25px;
 }
 
@@ -199,23 +206,21 @@ header {
 }
 
 .header {
-    width:100%;
-    display: flex;    
-    height: 40px;
-    margin-bottom:20px;
-    padding-top:20px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-top: 30px;
 }
 
 .fa-arrow-left {    
-    font-size:1.5rem;
+    font-size:1.8rem;
     color:black;
-    margin-top:10px;
-    margin-right: 100px;
+    margin-left: 10px;
 }
 
 .photomenu {
     width:100%;
-    height:500px;
+    height:300px;
     object-fit: cover;
 }
 
@@ -255,9 +260,7 @@ header {
     0% {
       opacity: 0;
     }
-    /*50% {
-      opacity: 0.5;
-    }*/
+    
     100% {
       opacity: 1;
     }

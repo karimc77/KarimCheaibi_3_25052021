@@ -31,9 +31,6 @@ body {
     }
 }
 
-
-
-
 /* HEADER */
 
 .header {
@@ -80,8 +77,6 @@ h1 {
 }
 
 h2 {
-    /*display:flex;
-    justify-content: center;*/
     font-family: "rotobB";
     font-size: 1.5rem;
     padding-top: 20px;
@@ -287,7 +282,6 @@ article {
 }
 
 .card {
-    /*display: flex;*/
     border-radius: 10px 10px 10px 10px;
     position: relative;
     margin: 15px;
@@ -331,15 +325,12 @@ a:link {
 .fa-heart {
     font-size: 1.3rem;
     color: white;
-    /*margin-top: 57%;*/
-    /*margin-left: 25px;*/
     margin-top: -65px;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: black;
 }
 
 .fa-heart:before {
-    /*content: "\f004";*/
     font-weight: bold;
     transition: color 0.5s;
 }
@@ -365,10 +356,12 @@ a:link {
     0% {
       opacity: 0;
     }
+
     50% {
       opacity: 0.5;
     }
+    
     100% {
       opacity: 1;
     }
-  }
+}
