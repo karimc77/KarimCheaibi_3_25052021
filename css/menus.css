@@ -108,6 +108,7 @@ h2 {
     display: flex;
     flex-direction: column;
     padding: 10px;
+    width: 80%;
 }
 
 .line-menu-action {
@@ -157,7 +158,7 @@ h2 {
     font-size: 1rem;
     font-weight: normal;
     text-overflow: ellipsis;
-    white-space: nowrap;
+    /*white-space: nowrap;*/
     overflow: hidden;
 }
 
@@ -242,11 +243,14 @@ h4 {
     font-family:"roboto";
     font-size:1rem;
     font-weight:normal;
-    margin-top:0px;
+    margin-top:0px;    
+    /*width: 80%;*/
+}
+
+h4:hover {
     text-overflow: ellipsis;
-    white-space: nowrap;
+    /*white-space: nowrap;*/
     overflow: hidden;
-    /*width: 50%;*/
 }
 
 strong {
@@ -346,6 +350,7 @@ article {
     display:flex;
     justify-content: center;
     margin: 40px;
+    padding-bottom: 50px;
 }
 
 .btn  {
@@ -354,9 +359,10 @@ article {
     background-color: #9356DC;
     color: white;
     font-family: "roboto";
-    outline: none;    
+    outline: none;
 }
 
 .btn:hover {
     background: linear-gradient(180deg, #FF79DA, #9356DC);
+    box-shadow: 8px 5px 5px black;
 }

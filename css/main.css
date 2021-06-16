@@ -139,6 +139,7 @@ h4 {
 
 .button:hover {
     background: linear-gradient(180deg, #FF79DA, #9356DC);
+    box-shadow: 8px 5px 5px black;
 }
 
 /* FONCTIONNEMENT 1/2/3 */
