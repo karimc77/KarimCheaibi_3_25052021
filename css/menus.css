@@ -94,6 +94,104 @@ h2 {
 
 /* Animation sur Icone Validation des menus */
 
+/* Code FIX LAYOUT*/
+
+.line-menu {
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    background-color: white;
+    overflow: hidden;
+}
+
+
+.line-menu-desc {
+    padding: 10px;
+}
+
+.line-menu-action {
+    display: flex;
+    align-items: center;
+}
+
+.line-menu-action span:first-child {
+    transform: translateX(54px);
+    font-weight: bold;
+    transition: transform 330ms ease-in-out;
+}
+
+.icon-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #99E2D0;
+    width: 60px;
+    height: 90px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    transform: translateX(60px);
+    transition: transform 330ms ease-in-out;
+}
+
+.line-menu:hover .icon-menu i {
+    animation: rotation 1s linear ;
+}
+
+.line-menu:hover .line-menu-action span:first-child {
+    animation: slide-left-price 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) forwards;
+}
+
+
+.line-menu:hover .line-menu-action .icon-menu {
+    animation: slide-left-icon 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) forwards;
+}
+
+.line-menu-desc h3, .line-menu-action h3 {
+    margin: 0;
+}
+
+.subtitle {
+    margin: 5px 0;
+    font-family: "roboto";
+    font-size: 1rem;
+    font-weight: normal;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.line-menu-desc {
+    display: flex;
+    flex-direction: column;
+}
+
+@keyframes slide-left-price {
+    0% {
+        transform: translateX(54px);
+    }
+
+    100% {
+        transform: translateX(-10px);
+    }
+}
+
+@keyframes slide-left-icon {
+    0% {
+        transform: translateX(60px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* FIN code FIX LAYOUT*/
+
+
+
+
 .align-price {
     display: flex;
     justify-content: space-between;
@@ -101,7 +199,7 @@ h2 {
     line-height: 1.5em;
     margin: 0;       
 }
-
+/*
 .icon {
     display: flex;
     justify-content: center;
@@ -112,15 +210,15 @@ h2 {
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
     right: -2px;
-    position: absolute;
+    position:absolute;
     top: 0;
     opacity: 0;
     transition: transform 330ms ease-in-out;
-}
+}*/
 
-.icon:hover {
+/*.icon:hover {
     opacity: 1;
-}
+}*/
 
 .fa-check-circle {
     font-size: 2.1em;
@@ -143,12 +241,17 @@ article:hover strong {
 	animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
-article:hover .icon {
+/*article:hover .icon {
+    -webkit-animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}*/
+
+article:hover .icon-menu {
     -webkit-animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 	animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
-
+/*
 @keyframes slide-left {
     0% {
       -webkit-transform: translateX(0);
@@ -173,15 +276,20 @@ article:hover .icon {
       transform: translateX(0);
       opacity: 1;
     }
-}
+}*/
+
 
 /* FIN Animation Coche Slide Right - Left */
 
 /* Animation Coche Tournante */
 
-article:hover .icon i {
-    animation: rotation 1s linear ;
-}
+/*article:hover .icon .fa-check-circle {
+    animation: rotation 1s linear;
+}*/
+
+/*article:hover .icon-menu .fa-check-circle {
+    animation: rotation 1s linear;
+}*/
 
 @keyframes rotation {
     0% {
