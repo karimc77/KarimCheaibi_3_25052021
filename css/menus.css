@@ -94,8 +94,6 @@ h2 {
 
 /* Animation sur Icone Validation des menus */
 
-/* Code FIX LAYOUT*/
-
 .line-menu {
     margin: 20px;
     display: flex;
@@ -106,8 +104,9 @@ h2 {
     overflow: hidden;
 }
 
-
 .line-menu-desc {
+    display: flex;
+    flex-direction: column;
     padding: 10px;
 }
 
@@ -152,7 +151,7 @@ h2 {
     margin: 0;
 }
 
-.subtitle {
+.subtitle {    
     margin: 5px 0;
     font-family: "roboto";
     font-size: 1rem;
@@ -162,9 +161,8 @@ h2 {
     overflow: hidden;
 }
 
-.line-menu-desc {
-    display: flex;
-    flex-direction: column;
+span {
+    margin-left: -70px;
 }
 
 @keyframes slide-left-price {
@@ -187,45 +185,11 @@ h2 {
     }
 }
 
-/* FIN code FIX LAYOUT*/
-
-
-
-
-.align-price {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    line-height: 1.5em;
-    margin: 0;       
-}
-/*
-.icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #99E2D0;
-    width: 60px;
-    height: 90px;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
-    right: -2px;
-    position:absolute;
-    top: 0;
-    opacity: 0;
-    transition: transform 330ms ease-in-out;
-}*/
-
-/*.icon:hover {
-    opacity: 1;
-}*/
-
 .fa-check-circle {
     font-size: 2.1em;
     color: #fff;
     transition: transform 500ms ease-in-out;
 }
-
 
 /* Animation Coche Slide Right - Left */
 
@@ -241,55 +205,15 @@ article:hover strong {
 	animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
-/*article:hover .icon {
-    -webkit-animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-}*/
-
 article:hover .icon-menu {
     -webkit-animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 	animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
-/*
-@keyframes slide-left {
-    0% {
-      -webkit-transform: translateX(0);
-      transform: translateX(0);
-    }
-
-    100% {
-      -webkit-transform: translateX(-100px);
-      transform: translateX(-100px);
-    }
-}
-
-@keyframes slide-in-right {
-    0% {
-      -webkit-transform: translateX(1000px);
-      transform: translateX(1000px);
-      opacity: 0;
-    }
-
-    100% {
-      -webkit-transform: translateX(0);
-      transform: translateX(0);
-      opacity: 1;
-    }
-}*/
-
 
 /* FIN Animation Coche Slide Right - Left */
 
 /* Animation Coche Tournante */
-
-/*article:hover .icon .fa-check-circle {
-    animation: rotation 1s linear;
-}*/
-
-/*article:hover .icon-menu .fa-check-circle {
-    animation: rotation 1s linear;
-}*/
 
 @keyframes rotation {
     0% {
@@ -319,15 +243,14 @@ h4 {
     font-size:1rem;
     font-weight:normal;
     margin-top:0px;
-    margin-left:5px;
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
-    width: 50%;
+    /*width: 50%;*/
 }
 
 strong {
-    float:right;
+    /*float:right;*/
     margin-right:5px;
     margin-bottom: 25px;
 }
@@ -411,7 +334,7 @@ section {
 
 article {
     border-radius: 10px 10px 10px 10px;
-    padding:2px 2px;
+    /*padding:2px 2px;*/
     margin:20px;
     background-color: white;
     position: relative;
