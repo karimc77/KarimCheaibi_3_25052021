@@ -159,11 +159,11 @@ h2 {
     font-weight: normal;
     text-overflow: ellipsis;
     /*white-space: nowrap;*/
-    overflow: hidden;
+    overflow: hidden;    
 }
 
 span {
-    margin-left: -70px;
+    margin-left: -50px;
 }
 
 @keyframes slide-left-price {
