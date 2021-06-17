@@ -34,7 +34,7 @@ h2 {
     font-family:"roboto";
     font-size:1.3rem;
     font-weight:normal;
-    margin-left:30px;
+    margin-left:20px;
     padding-top:20px;
     border-bottom:3px #99e2d0 solid;
     width:14%;
@@ -158,9 +158,9 @@ h2 {
     font-family: "roboto";
     font-size: 1rem;
     font-weight: normal;
-    text-overflow: ellipsis;
-    /*white-space: nowrap;*/
-    overflow: hidden;    
+    /*text-overflow: ellipsis;*/
+    white-space: nowrap;
+    /*overflow: hidden;*/    
 }
 
 span {
@@ -238,6 +238,7 @@ h3 {
     font-weight:normal;
     margin-bottom:2px;
     margin-left:5px;
+    padding-top: 8px;
 }
 
 h4 {
@@ -252,13 +253,15 @@ h4:hover {
     text-overflow: ellipsis;
     /*white-space: nowrap;*/
     overflow: hidden;
+    /*width: 50%;*/ 
 }
 
 strong {
+    font-family:"roboto";
     float:right;
     margin-right:5px;
     /*margin-bottom: 25px;*/
-    margin-top: 8px;
+    margin-top: 15px;
 }
 
 /* HEADER */
