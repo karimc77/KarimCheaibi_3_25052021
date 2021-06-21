@@ -151,7 +151,7 @@ h4 {
     margin-bottom: 50px;
 }
 
-article {
+.article {
     /*display: flex;
     justify-content: center; /* Attention pour smartphone , pour pc enlever le display et justify content*/
     padding: 20px;
